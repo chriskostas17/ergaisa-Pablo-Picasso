@@ -1,0 +1,112 @@
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Βιογραφία Ζωγράφου</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      header div{
+        position: absolute;
+        left: 20px;
+        top: 10px;
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <h1 style="text-align: center;">Pablo Picasso</h1>
+    <h3 style="text-align: center;
+      color: rgb(187, 185, 185);
+      margin-top: 10px;">
+      Art is a lie that makes us realize the truth.</h3>
+      <h4 style="color: rgb(187, 185, 185);
+      font-size: 15px;
+      ">-&nbsp;Pablo Picaso</h4>
+      <div><a href="http://127.0.0.1:5500/project2.html"><img style="width: 80px;
+      height: 80px;" src="logo.png"></a></div>
+  </header>
+    <nav>
+        <ul>
+            <li><a href="#" data-section="biography">Βιογραφία</a></li>
+            <li><a href="#" data-section="paintings">Πίνακες</a></li>
+            <li><a href="#" data-section="exhibitions">Εκθέσεις</a></li>
+            <li><a href="#" data-section="links">Σύνδεσμοι</a></li>
+            <li><a href="#" data-section="management">Διαχείριση</a></li>
+        </ul>
+        <ul>
+          <li id="manage-exhibitions" style="display: none;"><a href="#">Διαχείριση Εκθέσεων</a></li>
+          <li id="manage-links" style="display: none;"><a href="#">Διαχείριση Συνδέσμων</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <div id="aside-biography" class="aside-section hidden">
+              <h2>Βιογραφία</h2>
+                <ul>
+                    <li><a href="#" data-subsection="Early Life">Νεαρή Ηλικία</a></li>
+                    <li><a href="#" data-subsection="Career">Καριέρα</a></li>
+                </ul>
+            </div>
+            <div id="aside-paintings" class="aside-section hidden">
+              <h2>Πίνακες</h2>
+                <ul>
+                    <li><a href="#" data-subsection="Portraits">Πορτρέτα</a></li>
+                    
+                </ul>
+            </div>
+            <div id="aside-exhibitions" class="aside-section hidden">
+              <h2>Εκθέσεις</h2>
+                <ul>
+                    <li><a href="#" data-subsection="Exhibitions-New-York">New York</a></li>
+                    <li><a href="#" data-subsection="Exhibitions-Paris">Paris</a></li>
+                    <li><a href="#" data-subsection="Exhibitions-London">London</a></li>
+                </ul>
+            </div>
+            <div id="aside-links" class="aside-section hidden">
+              <h2>Σύνδεσμοι</h2>
+                <ul>
+                    <li><a href="#" data-subsection="Διαδικτυακοί Πόροι">Διαδικτυακοί Πόροι</a></li>
+                    <li><a href="#" data-subsection="Βιβλία">Βιβλία</a></li>
+                </ul>
+            </div>
+            <div id="aside-management" class="aside-section hidden">
+              <ul>
+                <li><a href="#" id="login-btn">Είσοδος Διαχειριστή</a></li>
+                <li><a href="#" id="logout-btn" style="display:none;">Αποσύνδεση</a></li>
+                <li><a href="#" id="manage-exhibitions" style="display:none;">Διαχείριση Εκθέσεων</a></li>
+                <li><a href="#" data-section="manage-links" style="display:none;">Διαχείριση Συνδέσμων</a></li>
+              </ul>
+            </div>
+            
+                     
+        </aside>
+        <section style="text-align: center;" id="content">
+            <h2>Καλώς ήρθατε!</h2>
+            <p>Επιλέξτε μια κατηγορία από το μενού για να ξεκινήσετε.</p>
+        </section>
+        
+              <!-- Φόρμα σύνδεσης -->
+              <div id="login-form" style="display:none;
+              text-align: center;">
+                <h2>Είσοδος Διαχειριστή</h2>
+                <form>
+                  <label for="username">Όνομα Χρήστη:</label>
+                  <input type="text" id="username" name="username" required><br>
+                  
+                  <label for="password">Κωδικός:</label>
+                  <input type="password" id="password" name="password" required><br>
+                  
+                  <button type="submit">Σύνδεση</button>
+                </form>
+              </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Βιογραφία Ζωγράφου</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="script-eku.js"></script>
+    <script src="script-login.js"></script>
+    <script src="script-syn.js"></script>
+    
+</body>
+</html>

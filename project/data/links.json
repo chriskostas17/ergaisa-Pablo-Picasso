@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Επίσημη Ιστοσελίδα του Μουσείου Πικάσο",
+    "description": "Εξερευνήστε τις συλλογές και τις εκθέσεις του Μουσείου Πικάσο στο Παρίσι.",
+    "link": "https://www.museepicassoparis.fr/",
+    "category": "Διαδικτυακοί Πόροι"
+  },
+  {
+    "title": "Picasso in The Metropolitan Museum of Art",
+    "description": "Picasso in The Metropolitan Museum of Art",
+    "link": "https://www.metmuseum.org/exhibitions/listings/2010/picasso",
+    "category": "Διαδικτυακοί Πόροι"
+  },
+  {
+    "title": "THE NATIONAL GALLERY",
+    "description": "Pablo Picasso 1881 - 1973",
+    "link": "https://www.nationalgallery.org.uk/artists/pablo-picasso",
+    "category": "Διαδικτυακοί Πόροι"
+  },
+  {
+    "title": "Life with Picasso, by Françoise Gilot and Carlton Lake",
+    "description": "Artist Françoise Gilot describes her decade-long relationship with Picasso.",
+    "link": "https://www.goodreads.com/book/show/234067.Life_with_Picasso",
+    "category": "Βιβλία"
+  },
+  {
+    "title": "A Life of Picasso, Vol. 1: The Early Years, 1881-1906",
+    "description": "This first volume of Richardson's prodigiously detailed and documented four-volume study takes Picasso to the age of twenty-five. It reveals how the adolescent Picasso struggled, through determination and study, to escape the shadow of his father's artistic failures. It describes his precocious success in Barcelona and Paris and the period of rejection and despair that followed.",
+    "link": "https://www.goodreads.com/book/show/396476.A_Life_of_Picasso_Vol_1",
+    "category": "Βιβλία"
+  },
+  {
+    "title": "A Life Of Picasso: The Minotaur Years: 1933-1943",
+    "description": "Richardson tells Picasso's story through the art of this period, analyzing how it reflects the tenor of the artist's day-to-day life. The fascinating, accessible narrative immerses the reader in one of the most exciting artistic moments in twentieth century cultural history, and makes a groundbreaking contribution to the scholarship of the field.",
+    "link": "https://www.goodreads.com/book/show/10290664-a-life-of-picasso",
+    "category": "Βιβλία"
+  }
+]

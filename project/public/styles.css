@@ -1,0 +1,434 @@
+/* General Styles */
+body{
+	height: 140%;
+}
+*{
+	font-family: Arial;
+	margin: 0;
+}
+
+.content{
+	display: grid;
+	grid-template-areas: 
+		"header header"
+		"nav  nav"
+		"aside  main"
+		"footer footer";
+	
+}
+
+header {
+	grid-area: header;
+	background-color:  #7b7979;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+
+
+
+nav {
+	float: left;
+	grid-area: nav;
+	background: #444;
+	color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	margin-right: 40px;
+	clear: left;
+}
+
+nav ul {
+	list-style: none;
+	margin-right: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style-type: circle;
+}
+
+nav ul li {
+	margin-bottom: 30px;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+	text-decoration: none;
+	background-color: rgb(85, 85, 85); 
+	border-radius: 5px;
+}
+
+/* Layout */
+main {
+	grid-area: "main";
+	gap: 1rem;
+	padding: 1rem;
+}
+
+aside {
+	grid-area: aside;
+	float: left;
+	background-color: rgb(244, 244, 244);
+	padding: 20px;
+	border: 1px solid #ddd;
+	clear: left;
+	margin-right: 25px;
+	margin-bottom: 30px;
+}
+
+aside div h2{
+	padding-bottom: 10px;
+	color: #20232c;
+}
+aside div li{
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+aside div li a{
+	text-decoration: none;
+	color: rgb(24, 22, 31);
+	transition: color 0.2s;
+}
+aside div li a:hover{
+	text-decoration: none;
+	color: rgb(151, 151, 156);
+}
+
+
+main section {
+	background-color: #fff;
+	padding: 1rem;
+	border: 1px solid #ddd;
+}
+
+footer {
+	grid-area: footer;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #111518;
+	color: white;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+/* Hidden Sections */
+.hidden {
+	display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	main {
+			grid-template-columns: 1fr;
+	}
+
+	nav ul {
+			flex-direction: column;
+			align-items: center;
+	}
+
+	nav ul li {
+			margin: 0.5rem 0;
+	}
+}
+.main-header{
+
+	font-size: 40px;
+	font-weight: bold;
+	color:#382c42;
+}
+
+.early-life,  .career{
+	color: #423e3e;
+	margin-top: 15px;
+	text-align:start;
+	line-height: 30px;
+	font-size: 23px;
+}
+.Picasso-img {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid  #ddd;
+	float: left;
+	width: 170px;
+	margin-right: 50px;
+	margin-bottom:30px;
+}
+
+.Picasso-img img{
+	object-fit:contain;
+	margin-bottom:30px;
+}
+
+
+.gallery {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+	background-color: #333;
+	padding: 20px;
+}
+
+.painting {
+	text-align: center;
+	flex-basis: calc(33.333% - 20px);
+	max-width: 300px;
+	position: relative; 
+	margin-bottom: 30px;
+}
+
+.painting img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: 3px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+	transition: box-shadow 0.3s ease-in-out, transform 0.3s ease; /
+}
+
+.painting img:hover {
+	transform: translateY(-5px); 
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5); 
+}
+
+.painting p {
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: rgb(169, 139, 117);
+}
+
+.table{
+	margin-top: 20px;
+	border: #616676;
+}
+.table tr th{
+	font-size: 25px;
+	font-weight: bold;
+	padding: 10px;
+	background-color: rgb(56, 52, 59);
+	color: #c5bfbf;
+}
+
+.table tr td{
+	font-size: 20px;
+	font-weight: bold;
+	color: #454242;
+	text-align: center;
+	padding: 10px;
+	background-color: lightgray;
+}
+.table tr td a{
+	color: #3d3e71;
+	text-decoration: none;
+
+}
+.table tr td a:hover{
+	color: #7b7979;
+}
+/* Container για τη φόρμα σύνδεσης */
+#login-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Στυλ για τη φόρμα */
+#login-form form {
+  display: flex;
+  flex-direction: column;
+	padding: 20px;
+}
+
+/* Στυλ για τις ετικέτες */
+#login-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Στυλ για τα πεδία εισαγωγής */
+#login-form input[type="text"],
+#login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* Εφέ όταν το πεδίο είναι επιλεγμένο */
+#login-form input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Στυλ για το κουμπί */
+#login-form button {
+  padding: 10px;
+  width: 100%;
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#login-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Προσθήκη κεντραρίσματος για τίτλους */
+#login-form h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.del-but{
+	padding: 10px;
+	background-color: #615d5d;
+	color: #d3d3d3;
+	font-size: 15px;
+	font-weight: bold;
+	border: none;
+	border-radius: 5%;
+	transition: background-color 0.2s, color 0.2s;
+}
+.del-but:hover{
+	background-color: #252e7b;
+	color: #c7c7c7;
+}
+/* Στυλ για τη φόρμα προσθήκης */
+#add-exhibition-form {
+  width: 50%;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+#add-exhibition-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#add-exhibition-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+#add-exhibition-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #336567;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#add-exhibition-form button:hover {
+  background-color: #4f89a8;
+}
+
+#add-exhibition-form p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: red;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #add-exhibition-form {
+    width: 90%;
+  }
+}
+#add-link-form {
+  width: 50%;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+#add-link-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#add-link-form input,
+#add-link-form textarea,
+#add-link-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#add-link-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#add-link-form button:hover {
+  background-color: #45a049;
+}
+
+#add-link-form p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: red;
+  text-align: center;
+}
+
